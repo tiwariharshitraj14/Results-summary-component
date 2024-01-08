@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .body {
+      margin: 0px;
+      padding: 0px;
+      background-color: white;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .main1 {
+      border-radius: 20px;
+      margin: 20px;
+      padding: 10px;
+      background-color: rgb(99, 85, 248);
+      text-align: center;
+      line-height: 20px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      transform: translate(52px);
+    }
+
+    .main2 {
+      border-radius: 20px;
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 12px 10px 15px 0px rgb(237, 228, 228);
+      line-height: 40px;
+      display: flex;
+      flex-direction: column;
+      color: black;
+      font-weight: 700;
+    }
+
+    .main22 {
+      font-weight: 550;
+      padding: 5px;
+      margin-right: 3px;
+      margin-left: 34px;
+    }
+
+    .text1 {
+      margin-top: 9px;
+      color: rgb(218, 225, 232);
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .circle {
+      padding: 8.8px;
+      margin: 15px;
+      line-height: 30px;
+      font-size: 15px;
+      border-radius: 50%;
+      background-color: rgb(36, 14, 202);
+      height: 100px;
+      width: 100px;
+
+    }
+
+    .num1 {
+      color: aliceblue;
+      margin: 10px;
+      font-weight: 900;
+      font-size: 30px;
+    }
+
+    .num2 {
+      color: rgb(218, 225, 232);
+    }
+
+    .text2 {
+      color: rgb(249, 252, 255);
+      font-weight: 800;
+      font-size: 18px;
+      margin: 3px;
+    }
+
+    .text3 {
+      color: rgb(218, 225, 232);
+      line-height: 23px;
+      padding: 5px;
+      margin-top: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 9px;
+    }
+
+    .reaction {
+      color: lightcoral;
+      background-color: rgb(253, 217, 223);
+      border-radius: 10px;
+      margin: 5px;
+      padding: 2px;
+      display: flex;
+      gap: 5px;
+    }
+
+    .memory {
+      color: rgb(232, 177, 13);
+      background-color: rgb(250, 226, 153);
+      border-radius: 10px;
+      margin: 5px;
+      padding: 1px;
+      display: flex;
+      gap: 5px;
+    }
+
+    .verbal {
+      color: rgb(6, 181, 64);
+      background-color: rgb(215, 245, 170);
+      border-radius: 10px;
+      margin: 5px;
+      padding: 1px;
+      display: flex;
+      gap: 5px;
+    }
+
+    .visual {
+      color: rgb(8, 8, 201);
+      background-color: rgb(196, 189, 252);
+      border-radius: 10px;
+      margin: 5px;
+      padding: 1px;
+      display: flex;
+      gap: 5px;
+    }
+
+    .continue {
+      text-align: center;
+      color: aliceblue;
+      background-color: rgb(50, 47, 47);
+      border-radius: 30px;
+      margin-top: 15px;
+
+    }
+
+    .summary {
+      margin-left: 45px;
+      padding: 1px;
+      display: flex;
+      gap: 5px;
+    }
+
+    .reactionnum {
+      color: black;
+      margin-left: 10px;
+    }
+
+    .memorynum {
+      color: black;
+      margin-left: 10px;
+    }
+
+    .verbalnum {
+      color: black;
+      margin-left: 23px;
+    }
+
+    .visualnum {
+      color: black;
+      margin-left: 23px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="body">
+  <div class="main">
+    <div class="main1">
+      <div class="text1">
+        Your Result
+      </div>
+      <div class="circle">
+        <div class="num1"> 76<br>
+        </div>
+        <div class="num2">
+          of 100
+        </div>
+      </div>
+      <div class="text2">
+        Great
+      </div>
+      <div class="text3">
+        You scored higher than 65% of<br> the people who have taken<br> these tests.
+      </div>
+    </div>
+    <div class="main2">
+      <div class="summary">
+        Summary
+      </div>
+      <div class="main22">
+        <div class="reaction">
+          <img src="assets/images/icon-reaction.svg" alt="">
+          Reaction
+          <div class="reactionnum">
+            80 / 100</div>
+        </div>
+        <div class="memory">
+          <img src="assets/images/icon-memory.svg" alt="">
+          Memory
+          <div class="memorynum">
+            92 / 100
+          </div>
+        </div>
+        <div class="verbal">
+          <img src="assets/images/icon-verbal.svg" alt="">
+          Verbal
+          <div class="verbalnum">
+            61 / 100
+          </div>
+        </div>
+        <div class="visual">
+          <img src="assets/images/icon-visual.svg" alt="">
+          Visual
+          <div class="visualnum">
+            72 / 100
+          </div>
+        </div>
+        <div class="continue">
+          Continue
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
